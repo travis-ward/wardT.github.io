@@ -1,0 +1,188 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+/* notes to self
+subsection is the ones that go at the bottom
+aside fgoes on the right
+*/
+html{
+    border: .0025rem solid #000000;
+    
+}
+
+h1{
+    text-align:center;
+    transform: rotate(-4deg);
+    font-size: 5.3125rem;
+}
+span{
+    border: 0.0625rem solid black;
+    background-color: crimson;
+    font-family: fantasy;
+    text-shadow: 0.3125rem #ff0000;
+    
+    color: azure;
+}
+    
+nav{
+    word-spacing: 3.125rem;
+    font-size: 1.875rem;
+    border-top: 0.0625rem solid #000;
+    border-bottom: 0.0625rem solid #000;
+    padding-bottom: 2rem;
+     padding-top: 2rem;
+     padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+    
+    
+}
+nav a {
+
+    text-decoration: none;
+   
+
+}
+nav a:nth-child(2){
+    text-decoration: line-through;
+    display: inline-block;
+  transform: rotate(6deg);
+  
+}
+nav a:focus,
+nac a:hover. {
+    color: #fff;
+    background-color: #33658A;
+    
+}
+
+nav a:active {
+    color: #fff;
+    background-color: #000;
+}
+h2{
+    padding-left: 4.9125rem;
+    padding-right: 4.3125rem;
+}
+article{
+    padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+    border-right: 0.3125rem;
+    max-width: 37.5rem;
+}
+article > p{
+    text-align: left;
+    
+}
+article > p:nth-child(3){
+     text-align: left;
+    font-size: 1.125rem;
+
+}
+
+article > p:nth-child(2){
+    
+    text-align: left;
+    font-size: 1.125rem;
+
+    
+}
+article{
+    align-content:left;
+}
+img{
+    max-width:100%;
+    max-height: 100%;
+    
+}
+.article-image>img{  
+    float: left;
+    padding-right: .9125rem;
+}
+
+
+.sub-section>figure {
+ display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 14.993rem; 
+    
+
+}
+figcaption{
+    text-align:center;
+    background-color: beige;
+}
+button{
+    background-color: blue;
+    color: azure;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    margin-top: 1.875rem;
+    border-radius: 0.9375rem;
+    font-family: fantasy;
+}
+aside{
+    float:right;
+    transform: translateY(-87.5rem);
+    width: 15.625rem;
+    height: auto;
+    border-left: .0025rem solid #000000;
+    padding-left: 1rem;
+}
+.expand{
+    border-bottom: .0025rem solid #000000;
+    padding-bottom: 1rem;
+    
+}
+footer{
+    transform: translateX(265px);
+}
+footer>p:nth-child(1){
+    transform: translateX(-256px);
+}
